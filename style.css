@@ -1,0 +1,314 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+*margin {
+  padding: 0;
+  margin: 0;
+}
+
+.btton {
+  background-color: #2f45d6;
+  border: none;
+  padding: 3px 8px;
+  color: wheat;
+}
+
+#service {
+  /* background: linear-gradient(rgba(black),rgba(black),url(./assests/img/cover_2.jpg)); */
+
+  background-image: url(./assests/img/cover_2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 2;
+ 
+}
+
+#service::after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #182856a8;
+  z-index: -1;
+  
+}
+
+.service-p {
+  max-width: 650px;
+  margin: auto;
+}
+
+/* service 1  */
+
+.service1-p {
+  width: 700px;
+  margin: auto;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-gap: 10px;
+  background-color: #fff;
+  color: #444;
+}
+
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+
+
+
+/* service 1 */
+
+
+.icone {
+  margin-top: -65px;
+}
+
+.icone>i {
+  font-size: 70px;
+  z-index: 2;
+  margin-top: 30px;
+
+}
+
+.service-headline {
+  position: relative;
+}
+
+.service-headline::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 2px;
+  bottom: -12px;
+  left: 48%;
+  border-bottom: 3px solid black;
+}
+
+
+.service-pra {
+  max-width: 600px;
+  height: 100%;
+  margin: auto;
+  padding-top: 30px;
+}
+
+/* watch video ariea  */
+
+.video__section {
+  background-image: url("./assests/img/cover_1.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 150px 0;
+  position: relative;
+  z-index: 9;
+}
+.video__section h2 {
+  color: #fff;
+}
+.video__section p {
+  color: #fff;
+}
+.video__section::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #001fff66;
+  z-index: -1;
+}
+
+
+/* watch video ariea end  */
+
+/* counter ariea  */
+#counter{
+  background-image: url(./assests/img/cover_2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 2;
+}
+#counter::after{
+position: absolute;
+content: "";
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+background-color: #1d268994;
+z-index: -1;
+}
+.counter-icon{
+  
+}
+
+.counter-icon i{
+  font-size: 60px;
+  color: #fff;
+}
+/* testmonial ariea  */
+#teastmonial{
+  padding-top: 80px;
+  position: relative;
+}
+#teastmonial::after{
+  content: "";
+  position: absolute;
+  top: 120px;
+  left: 48%;
+  width: 90px;
+  border: 2px solid black;
+
+}
+.test-pra{
+  max-width: 650px;
+  margin: auto;
+}
+
+
+/* grid-ariea  */
+.grid-pra {
+  max-width: 750px;
+  margin: auto;
+  font-size: 20px;
+  position: relative;
+}
+
+.grid-pra::before {
+  content: "";
+  top: -30px;
+  left: 42%;
+  width: 90px;
+  height: 2px;
+  position: absolute;
+  border-top: 3px solid black;
+}
+
+.grid-box {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.grid-content {
+  padding: 20px;
+}
+
+.grid-icon i {
+  font-size: 50px;
+}
+
+.grid-img {
+  width: 100px;
+  height: 100%;
+
+}
+
+.grid-img img {
+  border-radius: 100%;
+}
+
+/* testmonial ariea  */
+
+.teastmonial {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+
+}
+
+.test-grid {
+  box-shadow: 10px black;
+  padding: 40px;
+  background-color: #faf4f4a5;
+}
+
+
+/* bloge ariea  */
+
+.bloge-pra{
+  max-width: 650px;
+  margin: auto;
+  padding: 20px 0px;
+}
+
+.bloge-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  grid-gap: 8px;
+}
+.bloge-content{
+  padding: 10px;
+}
+
+/* contact_ariea  */
+
+#contact{
+  background-image: url(./assests/img/image_1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 2;
+}
+
+#contact::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: #53558d8f;
+  z-index: -1;
+}
+
+
+
+.contact-heading{
+  position: relative;
+}
+.contact-pra::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 43%;
+  height: 20px;
+  width: 90px;
+  border-top: 2px solid black;
+}
+.contact-pra{
+  max-width: 730px;
+  margin: auto;
+  position: relative;
+}
+
+.contact-form{
+  max-width: 750px;
+  margin: auto;
+}
+
+.contact-bg{
+  background: none;
+}
+.contact-bg:hover{
+  background-color: none;
+}
